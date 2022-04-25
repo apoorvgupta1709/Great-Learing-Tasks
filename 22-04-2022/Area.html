@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Area</title>
+</head>
+<script>
+ function calc(){
+
+    var radius=document.getElementById("Radius").value;
+    var Area=3.14 * radius *radius;
+    console.log(Area);
+
+
+ }
+
+</script>
+<body>
+
+    <form>
+        <label for="name">Enter Radius :</label><br>
+        <input type="text" id="Radius"  placeholder="Enter Radius" name="Radius"><br>
+       
+        <br/>
+        <button type="button" value="submit" onclick="calc()">Calculate </button>
+
+      </form>
+    
+</body>
+</html>

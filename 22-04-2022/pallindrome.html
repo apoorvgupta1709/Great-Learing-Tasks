@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+function validatePalin() {  
+
+    var str=document.getElementById("valuee").value;
+  const len = str.length;  
+
+  for (let i = 0; i < len / 2; i++) {  
+
+      if (str[i] !== str[len - 1 - i]) {  
+          console.log( 'It is not a palindrome'); 
+          return; 
+      }  
+  }  
+  console.log( 'It is a palindrome');  
+}  
+
+
+</script>
+<body>
+
+    <form>
+        <label for="name">Enter Here :</label><br>
+        <input type="text" id="valuee"  placeholder="Enter Radius" name="Radius"><br>
+       
+        <br/>
+        <button type="button" value="submit" onclick="validatePalin()">Calculate </button>
+
+      </form>
+    
+    
+</body>
+</html>
