@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<script>
+     let arr=[
+        ];
+
+    function calc(){
+        var id=document.getElementById("id").value;
+        var name=document.getElementById("name").value;
+        let obj={
+            "id" :id,
+            "name" : name,
+
+        }       
+        arr.push(obj);
+        console.log(arr);
+          }
+   
+    function del(){
+        var id=document.getElementById("id").value;
+        var name=document.getElementById("name").value;
+
+        let obj={
+            "id" :id,
+            "name" : name,
+
+        }  
+
+        arr.splice(arr.findIndex(a => a.id === obj.id) , 1)
+
+    console.log(arr);
+
+    }
+
+
+  
+   </script>
+   <body>
+   
+       <form>
+           <label for="name">Enter id :</label><br>
+           <input type="text" id="id"  placeholder="Enter id" name="Radius"><br>
+          
+           <br/>
+           <input type="text" id="name"  placeholder="Enter name" name="Radius"><br>
+          
+           <br/>
+           <button type="button" value="submit" onclick="calc()">add </button>
+   
+           <br/>
+           <button type="button" value="submit" onclick="del()">delete </button>
+         </form>
+</body>
+</html>
