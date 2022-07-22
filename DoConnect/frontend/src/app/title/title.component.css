@@ -1,0 +1,35 @@
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+/*.md-card-wrapper {
+    position: relative;
+      width: 100%;    
+  }
+  span{
+    position: absolute;
+        top: 20%;
+        right: 20%;
+        color: white;
+        font-size: 34px;
+  }
+  h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-text-fill-color: solid;
+  }
+  .centered {
+    position: absolute;
+    border-color: aqua;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+   /* font-size: 34px;
+  }*/
+

@@ -1,0 +1,81 @@
+#content{
+    min-height: 600px;
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("https://img.freepik.com/premium-photo/large-white-question-mark-minimalist-animation-with-impact-effect-red-background-3d-render_626304-230.jpg?w=360") no-repeat center center;
+    background-size: cover;
+}
+
+#banner_content {
+    position: relative;
+   padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 6%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left:35%;
+    max-width: 400px;
+    max-height:660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    max-width: 300px !important;
+    max-height: 400px !important;
+   margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+         -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+  }
+  .thumbnail > img,
+  .thumbnail a > img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  a.thumbnail:hover,
+  a.thumbnail:focus,
+  a.thumbnail.active {
+    border-color: #337ab7;
+  }
+  .thumbnail .caption {
+    padding: 9px;
+    color: #333;
+  }
+  .panel > .table caption,
+.panel > .table-responsive > .table caption,
+.panel > .panel-collapse > .table caption {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+

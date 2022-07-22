@@ -1,0 +1,50 @@
+<app-nav
+  [isHome]="true"
+  [links]="['UserQuestions', 'userhome', 'AskQuestion']"
+></app-nav>
+
+<mat-card>
+  <mat-card-title >Questions are never foolish.</mat-card-title>
+  <br/>
+  <mat-card-subtitle>Stupider are those who never ask anything.</mat-card-subtitle>
+  <mat-card-content>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <form>
+        <p>
+        <mat-form-field appearance="legacy">
+          <!--mat-label>Description</mat-label>-->
+          <textarea style="width: 100%; max-width: 100%;"
+            type="text"
+            name="question"
+            matInput
+            [(ngModel)]="question"
+            rows="12" cols="200" placeholder="Description"
+          ></textarea>
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field>
+          <mat-label>Topic</mat-label>
+          <input type="text" name="topic" matInput [(ngModel)]="topic" />
+        </mat-form-field>
+        </p>
+      </form>
+    </div>
+    <button
+      mat-raised-button
+      color="primary"
+      style="margin-top: 5%; margin-left: 30%"
+      (click)="saveQuestion()"
+    >
+      Post
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      style="margin-top: 5%; margin-left: 30%"
+    > <a routerLink="/userhome" style="text-decoration:none; color:aliceblue">
+      Discard </a>
+    </button>
+  </mat-card-content>
+</mat-card>
+

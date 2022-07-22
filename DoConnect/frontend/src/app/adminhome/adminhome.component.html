@@ -1,0 +1,62 @@
+<app-nav [links]="['Questions', 'NewQuestions']" [isHome]="true"></app-nav>
+<!--<div style="margin-left: 40vw; margin-top: 10vw">
+  <h1 style="font-size: xx-large">Welcome Admin...!</h1>
+</div>
+-->
+
+<div id="content">
+
+  <!--Main banner image-->
+  <div id="banner_image">
+    <div class="container">
+      <div id="banner_content">
+        <h1>Let's Get to work!</h1>
+      </div>
+
+    </div>
+  </div>
+  <!--Main banner image end-->
+
+  <!--Item categories listing-->
+  <div class="container">
+    <div class="row text-center" id="item_list">
+      <div class="col-sm-4">
+        <a routerLink="/NewQuestions">
+          <div class="thumbnail">
+            <img src="https://png.pngtree.com/png-vector/20210810/ourlarge/pngtree-approved-icon-png-image_3794295.jpg"
+              alt="">
+            <div class="caption">
+              <h3>Approve</h3>
+              <p>See the new questions seeking approval</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4">
+        <a routerLink="/NewQuestions">
+          <div class="thumbnail">
+            <img src="https://cdn-icons-png.flaticon.com/512/216/216760.png" alt="">
+            <div class="caption">
+              <h3>Delete</h3>
+              <p>Remove any inappropriate questions</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4">
+        <a routerLink="/Questions">
+          <div class="thumbnail">
+            <img src="https://cdn-icons-png.flaticon.com/512/2360/2360101.png" alt="">
+            <div class="caption">
+              <h3>Explore</h3>
+              <p>See/Delete all questions</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Item categories listing end-->
+</div>

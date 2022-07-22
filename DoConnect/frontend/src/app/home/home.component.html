@@ -1,0 +1,41 @@
+<app-nav [isHome]="false"></app-nav>
+<app-title></app-title>
+<div style="max-width: 20%; margin-left: 75%; top: 30%; position: absolute">
+ <app-login></app-login>
+ 
+</div>
+
+<div style="max-width: 20%; margin-left: 75%; top: 30%; position: absolute">
+  <app-login></app-login>
+  
+ </div>
+ <div style="width: 20%; margin-left: 75%; top: 80%; position: absolute">
+  <mat-card>
+    <mat-card-title style="margin-left: 30%">Sign Up</mat-card-title>
+    <mat-card-content>
+     <!--<div style="display: flex; justify-content: center; align-items: center">-->
+      <a routerLink="/Register">
+        <button
+        mat-raised-button
+        color="primary"
+        style="margin-top: 5%; margin-left: 5%" >
+        New User? Register Here
+      </button>
+      </a>
+     <!--</div>-->
+    </mat-card-content>
+  </mat-card>
+ </div>
+ 
+ <mat-card class="title_center">
+  <mat-card-title>This website is Free and always will be! :)</mat-card-title>
+</mat-card>
+<mat-card class="title_center">
+  <mat-card-content>Catchup with us on Social Media </mat-card-content>
+</mat-card>
+<mat-card class="title_center">
+  <mat-icon class="title_center">facebook</mat-icon>
+</mat-card>
+
+   
+<app-footer></app-footer>

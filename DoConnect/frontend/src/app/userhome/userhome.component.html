@@ -1,0 +1,31 @@
+<app-nav
+  [isHome]="true"
+  [links]="['UserQuestions', 'AskQuestion']"
+></app-nav>
+<!--<div style="margin-top: 20vh; margin-left: 37vw">
+  <h1 style="font-size: xxx-large">Hello {{ user }}, </h1>
+</div>-->
+<div class="center">
+<div class="w3-container center">
+  <div class="w3-card-4 w3-dark-grey" style="width:50%">
+
+    <div class="w3-container w3-center">
+      <h1>{{ user }}, Let's Dive into the world of questions!</h1>
+      <img src="https://quotefancy.com/media/wallpaper/1600x900/6792071-Anne-Burrell-Quote-Part-of-being-successful-is-about-asking.jpg" alt="Avatar" style="width:80%">
+      <br/>
+      <div class="w3-section">
+        
+        <!--<a mat-button [routerLink]="'/'"> <h3> Answer</h3></a>-->
+        
+        <button mat-raised-button color="primary"><a routerLink="/AskQuestion" style="text-decoration: none; color:aliceblue;"> <h3> ASK</h3> </a></button> 
+        <button mat-raised-button color="primary"><a routerLink="/UserQuestions" style="text-decoration: none;color:aliceblue;"> <h3> ANSWER</h3> </a></button>
+        <!--<button class="w3-button w3-green">Ask</button>
+        
+        <button class="w3-button w3-red">Answer</button>-->
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
