@@ -1,0 +1,41 @@
+<p>employee-list works!</p>
+<h1>Employee Data</h1>
+
+ <!--Table-->
+<table class="table table-striped w-auto">
+
+    <!--Table head-->
+    <thead>
+      <tr>
+      
+        <th>Employee Name</th>
+        <th>Employee MobileNo</th>
+        <th>Employee Email</th>
+        <th>Employee Salary</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <!--Table head-->
+  
+    <!--Table body-->
+    <tbody>
+      <tr class="table-info" *ngFor= "let emp of employees">
+      
+        <td>{{emp.employeeName}}</td>
+        <td>{{emp.employeeMobileNo}}</td>
+        <td>{{emp.employeeEmail}}</td>
+        <td>{{emp.employeeSalary}}</td>
+        <td>
+            <button (click)="employeeDetails(emp.employeeId,emp.employeeName)" class="btn btn-info" >Details>></button>
+             <button (click)="removeEmployee(emp.employeeId)" class="btn btn-danger" style="margin-left:15px">Delete</button>
+              <button (click)="updateEmployee(emp.employeeId)" class="btn btn-info" style="margin-left:15px">Update</button>
+        </td>
+      </tr>
+      
+    </tbody>
+    <!--Table body-->
+  
+  
+  </table>
+  <!--Table-->
+

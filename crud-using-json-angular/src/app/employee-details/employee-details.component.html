@@ -1,0 +1,23 @@
+<p>employee-details works!</p>
+<h1>Employee Details</h1>
+
+<hr>
+<div *ngIf="employee" class="col-md-6">
+    <div>
+     <label> Employee Name </label> : &nbsp;&nbsp;  {{employee.employeeName}}
+    </div>
+    <div>
+        <label> Employee MobileNo </label> : {{employee.employeeMobileNo}}
+    </div>
+    <div>
+        <label> Employee Salary </label> :{{employee.employeeSalary}}
+    </div>
+    <div>
+        <label> Employee Email </label> : {{employee.employeeEmail}}
+    </div>
+
+    <div>
+        <button class="btn btn-primary" (click)="gotolist()">GO TO LIST</button>
+    </div>
+
+</div>
